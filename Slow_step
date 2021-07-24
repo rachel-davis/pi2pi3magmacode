@@ -1,0 +1,9 @@
+oo:=V25![1,0,0,0,0, 0,0,0,0,0,  0,0,0,0,0, 0,0,0,0,0, 0,0,0,0,0];
+Z:={};
+count:=0; 
+for s in H1sym do R:=s+oo; count:=count+1; print count, #Z; if 
+el(R*rho2)*el(R) eq 1 then Z:=Include(Z, R); end if; end for; 
+
+Z1:={};
+for z in Z do Z1:=Include(Z1,z-oo); end for;
+U:=sub<V25|Z1>;
