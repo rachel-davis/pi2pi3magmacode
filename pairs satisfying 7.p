@@ -29,6 +29,6 @@ end for; end for;
 ms:={}; for z in Zlist do ms:=Include(ms, m12(z-1)); end for;
 ms;
 z:=Random(Zlist);
-Kr:=Kernel(m12(z-1));
+Kr:=Kernel(Mrho2*m12(z)-1);
 K:=Kernel(M0-1) meet Kernel(M1-1) meet Kernel(M2-1);
 K meet Kr;
